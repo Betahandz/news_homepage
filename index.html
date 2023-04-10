@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- the styling of the project -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- this is a module script -->
+  <script src="./ammory/arsenal.js" type="module"></script>
+</head>
+<body>
+  <!-- a container to contain all -->
+  <div class="hero">
+    <!-- the header -->
+    <header class="heroine">
+      <!-- logo of the project -->
+      <div class="logo_container">
+        <img src="assets/images/logo.svg" alt="logo" loading="eager">
+      </div>
+      <!-- logo ends  -->
+
+      <nav class="links">
+        <!-- close menu bar -->
+        <ul class="linkage">
+          <img src="assets/images/icon-menu-close.svg" alt="" class="closemenu">
+          <li class="link"><a rel="refferal" href="">Home</a></li>
+          <li class="link"><a href="">New</a></li>
+          <li class="link"><a href="">Popular</a></li>
+          <li class="link"><a href="">Trending</a></li>
+          <li class="link"><a href="">Categories</a></li>
+        </ul>
+      </nav>
+
+      <!-- the menu bar -->
+      <img src="assets/images/icon-menu.svg" alt="menu" class="menubar">
+    </header>
+    <!-- end of the header -->
+    
+    <!-- the main -->
+    <main class="news">
+      <!-- welcome to the news section -->
+      <div class="reg_news">
+        <!-- the big guns -->
+        <section class="big_news">
+          <div class="big_img">
+          
+          </div>
+
+          <div class="tit">
+            <!-- title of the block -->
+            <div class="tit_blok">
+              <h1 class="tit_tit_tit">
+                The Bright 
+                Future of 
+                Web 3.0?
+              </h1>
+            </div>
+            <!-- end of title of the block -->
+          
+            <!-- the article -->
+            <article class="tit_art">
+              <p>
+                We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                But is it really fulfilling its promise?
+              </p>
+
+              <!-- the read more button -->
+              <button type="button" class="read_more">
+                Read More
+              </button>
+            </article>
+          </div>
+        </section>
+
+        <!-- other news -->
+        <section class="others">
+          <h2 class="other_tit">
+            New
+          </h2>
+
+          <article class="single_news">
+            <h3>Hydrogen VS Electric Cars</h3>
+            <p>will hydrogen-fueled cars ever catch up to EVs?</p>
+          </article>
+
+          <hr>
+
+          <article class="single_news">
+            <h3>The Downside of AI Artistry</h3>
+            <p> What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </article>
+
+          <hr>
+
+          <article class="single_news">
+            <h3>Is VC Funding Drying Up?</h3>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </article>
+
+        </section>
+      </div>
+      <!-- end of the news section -->
+
+      <!-- Moving to abstract -->
+      <section class="abstract">
+        <article class="abn">
+          <div class="img_con">
+            <img src="assets/images/image-retro-pcs.jpg" alt="retro" loading="lazy" class="abn_img">
+          </div>
+
+          <div class="num">
+            <span class="numbering">01</span>
+            <h4 class="abn_tit">
+              Reviving Retro PCs
+            </h4>
+            <p class="abn_details">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+
+        <!-- a single abstract -->
+        <article class="abn">
+          <div class="img_con">
+            <img src="assets/images/image-top-laptops.jpg" alt="Laptops" class="abn_img">
+          </div>
+
+          <div class="num">
+            <span class="numbering">
+              02
+            </span>
+
+            <h4 class="abn_tit">
+              Top 10 Laptops of 2022
+            </h4>
+
+            <p class="abn_details">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
+
+        <!-- a single abstract-->
+        <article class="abn">
+          <div class="img_con">
+            <img src="assets/images/image-gaming-growth.jpg" alt="gaming" class="abn_img" loading="lazy">
+          </div>
+
+          <div class="num">
+            <span class="numbering">03</span>
+
+            <h4 class="abn_tit">The Growth of Gaming</h4>
+
+            <p class="abn_details">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

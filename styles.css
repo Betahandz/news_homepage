@@ -1,0 +1,322 @@
+/* Typography */
+@font-face {
+    font-family: vthin;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: vbold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: vregular;
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: vextrabold;
+    src: url(assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
+/* never forget your roots son */
+:root{
+    /* typography */
+    --vt: vthin;
+    --vb: vbold;
+    --vr: vregular;
+    --veb: vextrabold;
+
+    /* colors */
+    /*===== Primary Colors =====*/
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+
+    /* ======= Neutral colors ====*/
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+    --Very-dark-blue-trans: hsla(240, 100%, 5%, 0.452);
+}
+
+/* we officially begin to style from here */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.hero{
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+}
+.heroine{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    width: 60%;
+}
+.menubar {
+    display: none;
+}
+.linkage{
+    list-style: none;
+    display: flex;
+    flex-flow: nowrap row;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 30px;
+}
+.closemenu {
+    display: none;
+}
+.link a{
+    text-decoration: none;
+    font-family: var(--vr);
+    font-weight: 600;
+    color: var(--Dark-grayish-blue);
+}
+.link a:hover{
+    color: var(--Soft-red);
+}
+/* End of the header styling */
+
+/* styling the main of the project */
+.reg_news{
+    align-items: stretch;
+    justify-content: space-between;
+}
+.reg_news,
+.tit{
+    display: flex;
+}
+.big_news{
+    width: 70%;
+}
+.big_img {
+    width: 100%;
+    min-height: 200px;
+    background-image: url(assets/images/image-web-3-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tit {
+    min-height: 200px;
+}
+.tit{
+    margin-top: 10px;
+    align-items: flex-start;
+}
+.tit_blok,
+.tit_art{
+    width: 50%;
+    height: 100%;
+}
+.tit_tit_tit{
+    font-family: var(--veb);
+    font-size: 50px;
+}
+.tit_art p{
+    font-family: var(--vr);
+    color: var(--Very-dark-blue);
+    line-height: 20px;
+    margin-top: 10px;
+}
+.read_more{
+    outline: none;
+    border: none;
+    background-color: var(--Soft-red);
+    font-family: var(--vb);
+    width: 50%;
+    text-transform: uppercase;
+    padding: 10px 0;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .8s;
+    color: var(--Off-white);
+}
+.read_more:hover{
+    background-color: var(--Very-dark-blue);
+}
+
+/* styling of the others news begins here */
+.others{
+    width: 27%;
+    background-color: var(--Very-dark-blue);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.other_tit{
+    color: var(--Soft-orange);
+    font-family: var(--vb);
+}
+.single_news h3{
+    color: var(--Off-white);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+.single_news h3:hover{
+    color: var(--Soft-orange);
+}
+.single_news p{
+    color: var(--Grayish-blue);
+}
+/* end of the other news */
+
+/* this is where the styling of the abstract starts */
+.abstract{
+    margin: 65px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.abn{
+    width: 32%;
+    height: 120px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.img_con{
+    width: 30%;
+    height: inherit;
+}
+.img_con img{
+    min-width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+.num{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.numbering{
+    font-family: var(--vb);
+    font-size: 30px;
+    color: var(--Grayish-blue);
+}
+.abn_tit{
+    font-family: var(--veb);
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+.abn_tit:hover{
+    color: var(--Soft-red);
+}
+.abn_details{
+    font-family: var(--vr);
+    color: var(--Dark-grayish-blue);
+}
+/* media query for the project */
+@media screen and (max-width: 768px) {
+    .read_more {
+        margin-top: 10px;
+    }
+    .num {
+        width: 70%;
+    }
+    .img_con {
+        width: 20%;
+    }
+    .abn {
+        width: 100%;
+        gap: 10px;
+    }
+    .abstract {
+        flex-flow: wrap column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .single_news h3 {
+        margin-top: 20px;
+    }
+    .others {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .tit_tit_tit {
+        font-size: 7vw;
+        width: 60%;
+    }
+    .tit_blok,
+    .tit_art {
+        width: 100%;
+    }
+    .big_news {
+        width: 100%;
+    }
+    .big_img {
+        background-image: url(assets/images/image-web-3-mobile.jpg);
+    }
+    .reg_news,
+    .tit {
+        display: block;
+    }
+    .closemenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .hero {
+        min-height: 100vh;
+    }
+    .menubar {
+        display: block;
+        cursor: pointer;
+    }
+    .links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--Very-dark-blue-trans);
+        z-index: -2;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .linkage {
+        background-color: white;
+        flex-flow: wrap column;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: unset;
+        align-items: flex-start;
+        padding: 70px 20px;
+    }
+    .link {
+        margin: 20px;
+        display: block;
+        width: 100%;
+    }
+    .tit_art > p {
+        margin-top: 5px;
+    }
+    .tit {
+        margin-top: 0;
+    }
+}
+/* classes to be added for functionality */
+.show_nav {
+    opacity: 1;
+    z-index: 4;
+}
